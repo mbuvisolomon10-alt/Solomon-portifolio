@@ -1,0 +1,105 @@
+/* GENERAL STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #d8f3dc; /* Light Green Background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #36c41a;
+  color: rgb(15, 9, 9);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* NAVIGATION */
+nav {
+  background: #46f51a;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(250, 242, 242);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #2be705;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+h2 {
+  color: #280ad1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* CARD DESIGN */
+.card {
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* PROJECT GRID */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #0d0e0d;
+  color: rgb(240, 234, 234);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0ef00e;
+}
+
+/* FOOTER */
+footer {
+  background: #2eee07;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
