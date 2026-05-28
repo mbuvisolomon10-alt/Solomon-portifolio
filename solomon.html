@@ -6,6 +6,21 @@
   <title>Solomon Mbuvi Portfolio</title>
 
   <style>
+    #email,
+#phone{
+  padding:5px 10px;
+  border-radius:8px;
+  background:rgba(255,255,255,0.1);
+  border:1px solid #00ffff;
+  outline:none;
+  transition:0.3s;
+}
+
+#email:focus,
+#phone:focus{
+  background:rgba(0,255,255,0.15);
+  box-shadow:0 0 10px #00ffff;
+}
     *{
       margin:0;
       padding:0;
@@ -26,7 +41,7 @@
       position:relative;
     }
 
-    /* Animated glowing background */
+    /* Animated glowing lights */
     body::before,
     body::after{
       content:"";
@@ -139,6 +154,24 @@
       text-align:center;
     }
 
+    .contact-box{
+      background: rgba(255,255,255,0.08);
+      padding:20px;
+      border-radius:15px;
+      margin-top:15px;
+    }
+
+    .contact-box p{
+      margin:10px 0;
+      font-size:20px;
+    }
+
+    .editable-note{
+      margin-top:15px;
+      color:#ffff99;
+      font-style:italic;
+    }
+
     .btn{
       display:inline-block;
       margin-top:20px;
@@ -189,22 +222,24 @@
 
     <div class="section">
       <h2>About Me</h2>
+
       <p>
-        Hello! My name is <strong>Solomon Mbuvi</strong>. 
-        I am passionate about technology, creativity, sports, and personal growth. 
+        Hello! My name is <strong>Solomon Mbuvi</strong>.
+        I am passionate about technology, creativity, sports, and personal growth.
         I am also a dedicated <strong>Web Developer</strong> who enjoys creating modern and beautiful websites.
       </p>
     </div>
 
     <div class="section">
       <h2>Education</h2>
+
       <p>
-        I studied my primary education at 
+        I studied my primary education at
         <strong>Missions of Hope Center Area 2</strong>.
       </p>
 
       <p>
-        After primary school, I proceeded to high school at 
+        After primary school, I proceeded to high school at
         <strong>Kitondo School</strong>.
       </p>
 
@@ -212,6 +247,28 @@
         SPACE TO ADD MY FURTHER STUDIES PATH
       </div>
     </div>
+    <!-- MARKETING & LANGUAGE SKILLS SECTION -->
+<div class="section">
+  <h2>Marketing & Communication Skills</h2>
+
+  <p>
+    I am also renowned in marketing because of my strong communication
+    and interaction skills. I am good in:
+  </p>
+
+  <ul>
+    <li>🇫🇷 French</li>
+    <li>🇬🇧 English</li>
+    <li>💻 Computer Skills</li>
+    <li>🇰🇪 Swahili</li>
+  </ul>
+
+  <p style="margin-top:15px;">
+    These skills help me communicate effectively with different people,
+    market services professionally, and work confidently in technology
+    and business environments.
+  </p>
+</div>
 
     <div class="section">
       <h2>Sports & Hobbies</h2>
@@ -231,10 +288,6 @@
     <div class="section">
       <h2>Web Development Skills</h2>
 
-      <p>
-        I am skilled in creating websites using:
-      </p>
-
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -242,6 +295,59 @@
       </ul>
 
       <a href="#" class="btn">View My Projects</a>
+    </div>
+    <!-- CONTACT SECTION -->
+<div class="section">
+  <h2>Contact Me</h2>
+
+  <div class="contact-box">
+
+    <p>
+      📧 Email:
+      <span id="email" contenteditable="true">
+        solomonmbuvi10@gmail.com
+      </span>
+    </p>
+
+    <p>
+      📞 Contact:
+      <span id="phone" contenteditable="true">
+        0141402612
+      </span>
+    </p>
+
+    <p class="editable-note">
+      Click the email or phone number to edit them live on the page.
+    </p>
+
+  </div>
+</div>
+
+<!-- SERVICE REQUEST SECTION -->
+<div class="section">
+  <h2>Request for My Services</h2>
+
+  <form class="service-form">
+
+    <input type="text" placeholder="Enter Your Name" required>
+
+    <input type="email" placeholder="Enter Your Email" required>
+
+    <textarea 
+      placeholder="Type the service you need here..."
+      rows="6"
+      required>
+    </textarea>
+
+    <button type="submit" class="btn">
+      Send Request
+    </button>
+
+  </form>
+</div>
+  
+
+      </div>
     </div>
 
   </div>
@@ -251,7 +357,7 @@
   </footer>
 
   <script>
-    // Simple glowing text animation
+    // Glowing title animation
     const title = document.querySelector('.title');
 
     const colors = [
